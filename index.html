@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELL MOB</title>
+    <style>
+        *{
+            border:0;
+            margin:0;
+            color:white;
+            text-decoration:none;
+            font-family:sans-serif;
+        }
+        body{
+            background-color:rgb(3, 0, 22);
+        }
+        .bar{
+            background-color:rgb(196, 32, 32);
+            width:100%;
+            height:auto;
+            position:fixed;
+        }
+        .in{
+            background-color:rgb(196, 32, 32);
+            border-radius:20px;
+            font-size:28px;
+            margin-top:20px;
+            padding:10px;
+            outline:none;
+        }
+        .inn{
+            background-color:rgb(196, 32, 32);
+            border-radius:20px;
+            font-size:28px;
+            margin-top:20px;
+            padding:10px;
+            outline:none;
+        }
+        .btn{
+            background-color:rgb(196, 32, 32);
+            border-radius:20px;
+            font-size:28px;
+            margin-top:20px;
+            padding:10px;
+            outline:none;
+        }
+        .work{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="bar"><h1><b>BELL MOB</b></h1></div>
+        <h1 style="height:250px;"></h1>
+        <div class="tab">
+        <h2>Enter the gmail</h2>
+        <input class="in" placeholder="Enter your gmail" type="text">
+        <h1 style="height:50px;"></h1>
+        <h2>Enter the password</h2>
+        <input class="inn" onkeyup="p()" placeholder="Enter your password" type="password">
+        </div>
+        <div class="work">
+            <center>
+                <a href="g.html"><button class="btn">Get gmails</button></a>
+                <h1></h1>
+                <a href="c.html"><button class="btn">Create gmails</button></a>
+                <h1></h1>
+                <a href="d.html"><button class="btn">Destruction Groups</button></a>
+                <h1></h1>
+                <a href="a.html"><button class="btn">Add likes</button></a>
+                <h1></h1>
+                <a href="f.html"><button class="btn">Make games free</button></a>
+            </center>
+        </div>
+    </center>
+    <script>
+        let em = document.getElementsByClassName("in")[0];
+        let ps = document.getElementsByClassName("inn")[0];
+        let tab = document.getElementsByClassName("tab")[0];
+        let work = document.getElementsByClassName("work")[0];
+        function p(){
+            if(ps.value=="global123"){
+                work.style.display="block";
+                tab.style.display="none";
+            }
+            else if(ps.value=="jazz"){
+                work.style.display="block";
+                tab.style.display="none";
+            }
+            else if(ps.value=="dang"){
+                work.style.display="block";
+                tab.style.display="none";
+            }
+            else{
+                
+            }
+        }
+    </script>
+</body>
+</html>
